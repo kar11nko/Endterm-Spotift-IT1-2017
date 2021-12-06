@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin panel</title>
+  <link rel="stylesheet" href="crudcss.css">
+</head>
+<body>
+  <h1>Admin</h1>
+  <div class="img">
+  <a href="index.html"><img src="spotify.png" width="250px" alt="logo of the book"></a>
+</div>
+  <table>
+    <tr>
+      <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+        <div>
+          <label>Name:</label>
+          <label class="validation-error hide" id="spotifyNameValidationError">This field is required.</label>
+          <input type="text" name="Name" id="Name">
+        </div>
+        <div>
+          <label>Nickname</label>
+          <input type="text" name="nickname" id="nickname">
+        </div>
+        <div>
+          <label>Age</label>
+          <input type="text" name="age" id="age">
+        </div>
+        <div>
+          <label>Favourite genre</label>
+          <input type="text" name="genre" id="genre">
+        </div>
+        <div  class="form-action-buttons">
+          <input type="submit" value="Add user">
+        </div>
+      </form>
+    </td>
+    <td>
+      <table class="list" id="List">
+        <thead>
+          <tr>
+            <th>Name:</th>
+            <th>Nickname:</th>
+            <th>Age:</th>
+            <th>Favourite genre:</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </td>
+  </tr>
+</table>
+<script src="crud.js"></script>
+</body>
+</html>
